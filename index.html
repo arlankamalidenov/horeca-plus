@@ -724,6 +724,7 @@
     <div class="application-modal" data-application-modal hidden>
         <div class="application-modal__backdrop" data-close-popup></div>
         <div class="application-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="application-modal-title">
+            <div class="application-modal__handle" aria-hidden="true"></div>
             <button type="button" class="application-modal__close" data-close-popup aria-label="Закрыть форму">
                 <span></span>
                 <span></span>
@@ -771,12 +772,12 @@
                     </div>
                 </fieldset>
 
+                <p class="application-status" data-application-status aria-live="polite"></p>
+
                 <div class="application-actions">
                     <button type="submit" class="btn-primary application-submit">Отправить заявку</button>
                     <p class="application-note">Мессенджер откроется в новой вкладке.</p>
                 </div>
-
-                <p class="application-status" data-application-status aria-live="polite"></p>
             </form>
         </div>
     </div>
