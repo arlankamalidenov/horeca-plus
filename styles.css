@@ -2583,7 +2583,20 @@ a {
     }
 
     .marquee-container {
+        width: calc(100% + (var(--mobile-side-rhythm) * 2));
+        margin-left: calc(var(--mobile-side-rhythm) * -1);
+        margin-right: calc(var(--mobile-side-rhythm) * -1);
         margin-top: 60px;
+        padding: 14px 0;
+    }
+
+    .marquee-content {
+        width: max-content;
+    }
+
+    .marquee-text {
+        flex: 0 0 auto;
+        font-size: 14px;
     }
 
     .skills-subtitle {
