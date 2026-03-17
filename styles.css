@@ -1920,6 +1920,17 @@ a {
     letter-spacing: 0.1em;
 }
 
+.about-logo {
+    margin-bottom: 28px;
+}
+
+.about-logo img {
+    height: 75px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .about-title {
     font-size: 32px;
     font-weight: 700;

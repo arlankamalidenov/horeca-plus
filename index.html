@@ -9,6 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '950532847322090');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=950532847322090&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
     <!-- Ambient Background Layers -->
@@ -90,7 +107,7 @@
                 3 дня, после которых ваш администратор перестаёт тушить пожары и начинает системно управлять залом, командой и процессами
             </p>
             <div class="hero-cta">
-                <button type="button" class="btn-primary" data-open-popup>
+                <button type="button" class="btn-primary" data-scroll-target="features">
                     Узнать детали
                 </button>
                 <div class="cta-note">
@@ -99,7 +116,7 @@
             </div>
         </section>
 
-        <section class="features-grid">
+        <section id="features" class="features-grid">
             <div class="feature-card card-dark">
                 <div class="card-content">
                     <h3 class="card-title">24 часа</h3>
@@ -292,6 +309,69 @@
             </div>
         </section>
 
+        <!-- EXPERTS SECTION -->
+        <section id="experts" class="experts-section">
+            <div class="experts-header">
+                <div class="experts-label">Эксперты интенсива</div>
+                <h2 class="experts-title">Практики,<br>не теоретики</h2>
+                <p class="experts-subtitle">Каждый спикер — действующий профессионал с реальным опытом работы в HoReCa Кыргызстана.</p>
+            </div>
+
+            <div class="experts-grid">
+                <div class="expert-card">
+                    <div class="expert-photo-wrapper">
+                        <img src="images/talgat.png" alt="Талгат Качкыналиев">
+                    </div>
+                    <h3 class="expert-name">Талгат Качкыналиев</h3>
+                    <p class="expert-role">HR-управление и найм</p>
+                    <ul class="expert-details-list">
+                        <li>— Эксперт по HR в сфере HoReCa</li>
+                        <li>— Система найма, адаптации и мотивации персонала</li>
+                        <li>— Автор модели «Тренер тренеров» для администраторов</li>
+                    </ul>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-photo-wrapper">
+                        <img src="images/jan.png" alt="Жанабиль Давлетбаев">
+                    </div>
+                    <h3 class="expert-name">Жанабиль Давлетбаев</h3>
+                    <p class="expert-role">Юридическая безопасность</p>
+                    <ul class="expert-details-list">
+                        <li>— Юрист, член правления Ассоциации «Юристы Кыргызстана»</li>
+                        <li>— Награда Минэкономики КР за вклад в регуляторную реформу</li>
+                        <li>— Алгоритмы работы с проверками, блогерами и «потребительским экстремизмом»</li>
+                    </ul>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-photo-wrapper">
+                        <img src="images/saniya.png" alt="Сания Копцева">
+                    </div>
+                    <h3 class="expert-name">Сания Копцева</h3>
+                    <p class="expert-role">Пищевая безопасность</p>
+                    <ul class="expert-details-list">
+                        <li>— Международный аудитор CERT International и TÜV Rheinland</li>
+                        <li>— Опыт аудита более 25 предприятий</li>
+                        <li>— Внедрение санитарных стандартов и подготовка к проверкам</li>
+                    </ul>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-photo-wrapper">
+                        <img src="images/tyan.png" alt="Евгений Тян">
+                    </div>
+                    <h3 class="expert-name">Евгений Тян</h3>
+                    <p class="expert-role">Продажи и сервис</p>
+                    <ul class="expert-details-list">
+                        <li>— 26 лет опыта в общепите</li>
+                        <li>— Обучил более 3 000 человек в 50+ заведениях Бишкека</li>
+                        <li>— Техники Upselling, Cross-selling и постановка системы сервиса</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- FIFTH SCREEN: SKILLS / RESULTS -->
         <section id="skills" class="skills-section">
             <div class="skills-layout">
@@ -470,68 +550,7 @@
             </div>
         </section>
 
-        <!-- EXPERTS SECTION -->
-        <section id="experts" class="experts-section">
-            <div class="experts-header">
-                <div class="experts-label">Эксперты интенсива</div>
-                <h2 class="experts-title">Практики,<br>не теоретики</h2>
-                <p class="experts-subtitle">Каждый спикер — действующий профессионал с реальным опытом работы в HoReCa Кыргызстана.</p>
-            </div>
-
-            <div class="experts-grid">
-                <div class="expert-card">
-                    <div class="expert-photo-wrapper">
-                        <img src="images/talgat.png" alt="Талгат Качкыналиев">
-                    </div>
-                    <h3 class="expert-name">Талгат Качкыналиев</h3>
-                    <p class="expert-role">HR-управление и найм</p>
-                    <ul class="expert-details-list">
-                        <li>— Эксперт по HR в сфере HoReCa</li>
-                        <li>— Система найма, адаптации и мотивации персонала</li>
-                        <li>— Автор модели «Тренер тренеров» для администраторов</li>
-                    </ul>
-                </div>
-
-                <div class="expert-card">
-                    <div class="expert-photo-wrapper">
-                        <img src="images/jan.png" alt="Жанабиль Давлетбаев">
-                    </div>
-                    <h3 class="expert-name">Жанабиль Давлетбаев</h3>
-                    <p class="expert-role">Юридическая безопасность</p>
-                    <ul class="expert-details-list">
-                        <li>— Юрист, член правления Ассоциации «Юристы Кыргызстана»</li>
-                        <li>— Награда Минэкономики КР за вклад в регуляторную реформу</li>
-                        <li>— Алгоритмы работы с проверками, блогерами и «потребительским экстремизмом»</li>
-                    </ul>
-                </div>
-
-                <div class="expert-card">
-                    <div class="expert-photo-wrapper">
-                        <img src="images/saniya.png" alt="Сания Копцева">
-                    </div>
-                    <h3 class="expert-name">Сания Копцева</h3>
-                    <p class="expert-role">Пищевая безопасность</p>
-                    <ul class="expert-details-list">
-                        <li>— Международный аудитор CERT International и TÜV Rheinland</li>
-                        <li>— Опыт аудита более 25 предприятий</li>
-                        <li>— Внедрение санитарных стандартов и подготовка к проверкам</li>
-                    </ul>
-                </div>
-
-                <div class="expert-card">
-                    <div class="expert-photo-wrapper">
-                        <img src="images/tyan.png" alt="Евгений Тян">
-                    </div>
-                    <h3 class="expert-name">Евгений Тян</h3>
-                    <p class="expert-role">Продажи и сервис</p>
-                    <ul class="expert-details-list">
-                        <li>— 26 лет опыта в общепите</li>
-                        <li>— Обучил более 3 000 человек в 50+ заведениях Бишкека</li>
-                        <li>— Техники Upselling, Cross-selling и постановка системы сервиса</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- EIGHTH SCREEN: ABOUT / FOUNDER -->
         <section id="about" class="about-section">
@@ -539,16 +558,19 @@
                 <!-- Left Column: Text + Stats -->
                 <div class="about-text-col">
                     <div class="about-label">О нас</div>
+                    <div class="about-logo">
+                        <img src="images/horeco.png" alt="HoReCa Plus">
+                    </div>
                     <h2 class="about-title">HoReCa Plus — голос индустрии гостеприимства КР</h2>
                     <div class="about-description">
-                        <p>HoReCa Plus — крупнейшая профессиональная ассоциация в сфере гостеприимства Кыргызстана. Уже 8 лет мы объединяем рестораны, кафе, отели и другие предприятия HoReCa, продвигая интересы отрасли на национальном уровне.</p>
+                        <p>HoReCa Plus — крупнейшая профессиональная ассоциация в сфере гостеприимства Кыргызстана. Уже 15 лет мы объединяем рестораны, кафе, отели и другие предприятия HoReCa, продвигая интересы отрасли на национальном уровне.</p>
                         <p>За эти годы мы провели десятки отраслевых форумов, конференций и профессиональных мероприятий, ставших точкой притяжения для участников рынка со всей страны. Мы работаем с государственными органами, международными организациями и бизнес-сообществом, чтобы создавать условия для роста индустрии.</p>
                         <p><strong>Академия HoReCa</strong> — наше образовательное направление, созданное чтобы системно решать главную проблему отрасли: дефицит профессиональных кадров. Интенсив «Точка контроля» — первый продукт академии.</p>
                     </div>
 
                     <div class="about-stats-grid">
                         <div class="about-stat-card">
-                            <div class="about-stat-number">8 лет</div>
+                            <div class="about-stat-number">15 лет</div>
                             <div class="about-stat-text">на рынке HoReCa</div>
                         </div>
                         <div class="about-stat-card">
@@ -789,6 +811,7 @@
             const faqRoot = document.querySelector('[data-faq]');
             const faqItems = faqRoot ? Array.from(faqRoot.querySelectorAll('[data-faq-item]')) : [];
             const popupTriggers = document.querySelectorAll('[data-open-popup]');
+            const scrollTriggers = document.querySelectorAll('[data-scroll-target]');
             const popup = document.querySelector('[data-application-modal]');
             const popupCloseControls = document.querySelectorAll('[data-close-popup]');
             const applicationForm = document.querySelector('[data-application-form]');
@@ -940,6 +963,20 @@
 
             popupTriggers.forEach((trigger) => {
                 trigger.addEventListener('click', () => openPopup(trigger));
+            });
+
+            scrollTriggers.forEach((trigger) => {
+                trigger.addEventListener('click', () => {
+                    const targetId = trigger.getAttribute('data-scroll-target');
+                    const targetElement = targetId ? document.getElementById(targetId) : null;
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 40,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
             });
 
             popupCloseControls.forEach((control) => {
